@@ -22,7 +22,7 @@ namespace backend.Controllers
         {
             try
             {
-                var cities = await _cityService.GetCities(cityId, cityName, provinceName);
+                var cities = await _cityService.GetCity(cityId, cityName, provinceName);
                 return Ok(cities);
             }
             catch (Exception ex)
